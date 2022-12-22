@@ -1,0 +1,32 @@
+.oid
+ {
+    margin: 5px;
+    border-radius: 5px;
+    font-size: x-small;
+}
+
+.lastUpdate
+{
+  font-size: x-small;
+}
+
+.title{
+
+}
+
+.temperature{
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 25px
+}
+
+
+.error {
+
+}
+
+.nodata {
+
+}

@@ -1,14 +1,20 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
-    "props": {
-      "experimentalOptimizeRendering": true
-    },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "category-menu#main"
     ]
   },
+  "category-menu#main": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": false,
+      "menuDisposition": "left",
+      "departments": [{"id":2},{"id":102}],
+      "sortSubcategories": "name",
+      "mobileMode": false
+    }
+  },
+
   "menu-item#category-apparel": {
     "props": {
       "id": "menu-item-category-apparel",

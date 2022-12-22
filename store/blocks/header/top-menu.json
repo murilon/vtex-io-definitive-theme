@@ -1,9 +1,9 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
+      "shopper-location",
       "menu-item#shop",
-      "menu-item#about-us"
-    ]
+      "menu-item#about-us"]
   },
   "menu-item#shop": {
     "props": {
@@ -21,9 +21,7 @@
     }
   },
   "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
+    "children": ["menu-item#vtex-website"]
   },
   "menu-item#vtex-website": {
     "props": {
@@ -39,5 +37,63 @@
         "text": "visit vtex.com"
       }
     }
+  },
+
+  "shopper-location": {
+    "children": ["modal-trigger#address"],
+    "props": {
+      "autofill": [
+        "city",
+        "country",
+        "neighborhood",
+        "number",
+        "postalCode",
+        "state",
+        "street"
+      ]
+    }
+  },
+  "modal-trigger#address": {
+    "children": ["user-address", "modal-layout#address"]
+  },
+  "user-address": {
+    "props": {
+      "variation": "bar",
+      "showStreet": false,
+      "showCityAndState": true,
+      "showPostalCode": true,
+      "showPrefix": false,
+      "showIfEmpty": true
+    }
+  },
+  "modal-layout#address": {
+    "children": ["modal-header#address", "modal-content#address"]
+  },
+  "modal-header#address": {
+    "children": ["flex-layout.col#address-header"]
+  },
+  "flex-layout.col#address-header": {
+    "children": ["rich-text#address-header"],
+    "props": {
+      "paddingLeft": 5
+    }
+  },
+  "rich-text#address-header": {
+    "props": {
+      "text": "### Change Location"
+    }
+  },
+  "modal-content#address": {
+    "children": ["change-location"]
+  },
+  "change-location": {
+    "props": {
+      "postalCode": "first",
+      "autocomplete": true,
+      "notRequired": ["street", "number", "city", "state"],
+      "hideFields": ["complement", "neighborhood", "receiverName", "reference"]
+    }
   }
+
+
 }

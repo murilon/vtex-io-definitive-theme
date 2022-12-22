@@ -7,10 +7,29 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
+      "flex-layout.row#form",
       "product-reviews",
       "product-questions-and-answers"
     ]
   },
+
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#form": {
+    "children": [
+      //"form"
+    ]
+  },
+  "form": {
+    "props": {
+      "entity": "FM",
+      "schema": "form"
+    }
+  },
+
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -107,10 +126,12 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
+      "temperature",
       "product-quantity",
-      "product-assembly-options",
+      //"product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
+      "availability-notify",
       "availability-subscriber",
       "shipping-simulator",
       "share#default"
@@ -126,8 +147,12 @@
 
   "sku-selector": {
     "props": {
-      "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "hideImpossibleCombinations": true,
+      "disableUnavailableSelectOptions": true,
+      "displayMode": "default",
+      "showValueForVariation": "image",
+      "imageHeight": 5,
+      "imageWidth": 5
     }
   },
 
@@ -168,7 +193,7 @@
     "props": {
       "blockClass": "message-availability"
     },
-    "children": ["availability-subscriber"]
+    "children": ["availability-notify"]
   },
 
   "share#default": {
