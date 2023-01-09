@@ -8,7 +8,7 @@
 
   "flex-layout.row#seller-page": {
     "children": [
-      "image#mobile-phone",
+      "image#seller-mobile-phone",
       "flex-layout.col#text-seller-page"
     ]
   },
@@ -32,7 +32,7 @@
     }
   },
 
-  "image#mobile-phone": {
+  "image#seller-mobile-phone": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
       "maxHeight": "",
