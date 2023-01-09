@@ -127,13 +127,13 @@
       "product-identifier.product",
       "sku-selector",
       "temperature",
+      "shipping-simulator",
       "product-quantity",
-      //"product-assembly-options",
+      "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
       "availability-notify",
       "availability-subscriber",
-      "shipping-simulator",
       "share#default"
     ]
   },
