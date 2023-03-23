@@ -1,0 +1,11 @@
+/*.itemListTitle {
+  font: 400 16px/24px Roboto, sans-serif; /* NOT following sketch for now, to highlight typed word in suggestion
+  letter-spacing: 0.13px;
+  visibility: hidden;
+}
+
+.itemListTitle::after {
+  content: 'Example';
+  visibility: visible;
+}
+*/

@@ -7,10 +7,30 @@
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
-      "product-reviews",
+      "flex-layout.row#form",
       "product-questions-and-answers"
     ]
   },
+
+
+
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#form": {
+    "children": [
+      //"form"
+    ]
+  },
+  "form": {
+    "props": {
+      "entity": "FM",
+      "schema": "form"
+    }
+  },
+
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -67,10 +87,10 @@
 
   "product-specification-badges": {
     "props": {
-      "specificationGroupName": "Group",
-      "specificationName": "On Sale",
+      "specificationGroupName": "Malte",
+      "specificationName": "Pilsen",
       "visibleWhen": "True",
-      "displayValue": "SPECIFICATION_NAME"
+      "displayValue": "Malte Pilsen"
     }
   },
 
@@ -107,14 +127,30 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
+      "temperature",
+      "cluster",
+      "shipping-simulator",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
+      "vtex.product-highlights@2.x:product-highlights#pdp",
       "flex-layout.row#buy-button",
+      "availability-notify",
       "availability-subscriber",
-      "shipping-simulator",
       "share#default"
     ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#pdp": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-text#pdp"]
+  },
+  "product-highlight-text#pdp": {
+    "props": {
+      "message": "{highlightName}"
+    }
   },
 
   "flex-layout.row#product-name": {
@@ -126,8 +162,12 @@
 
   "sku-selector": {
     "props": {
-      "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "hideImpossibleCombinations": true,
+      "disableUnavailableSelectOptions": true,
+      "displayMode": "default",
+      "showValueForVariation": "image",
+      "imageHeight": 5,
+      "imageWidth": 5
     }
   },
 
@@ -168,7 +208,7 @@
     "props": {
       "blockClass": "message-availability"
     },
-    "children": ["availability-subscriber"]
+    "children": ["availability-notify"]
   },
 
   "share#default": {
