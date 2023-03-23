@@ -7,9 +7,20 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price"
+      "product-selling-price",
+      "product-spot-price",
+      "product-spot-price-savings"
     ]
   },
+
+  "product-selling-price":{
+    "props":{
+      "message": "{sellingPriceValue}{hasMeasurementUnit, select, true{ / {measurementUnit}} false {}}",
+      "blockClass": "product--informations--price--selling"
+    }
+  },
+
+
 
   "flex-layout.row#list-price-savings": {
     "props": {

@@ -8,10 +8,11 @@
       "product-specification-group#table",
       "shelf.relatedProducts",
       "flex-layout.row#form",
-      "product-reviews",
       "product-questions-and-answers"
     ]
   },
+
+
 
   "flex-layout.row#form": {
     "children": [
@@ -86,10 +87,10 @@
 
   "product-specification-badges": {
     "props": {
-      "specificationGroupName": "Group",
-      "specificationName": "On Sale",
+      "specificationGroupName": "Malte",
+      "specificationName": "Pilsen",
       "visibleWhen": "True",
-      "displayValue": "SPECIFICATION_NAME"
+      "displayValue": "Malte Pilsen"
     }
   },
 
@@ -127,15 +128,29 @@
       "product-identifier.product",
       "sku-selector",
       "temperature",
+      "cluster",
       "shipping-simulator",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
+      "vtex.product-highlights@2.x:product-highlights#pdp",
       "flex-layout.row#buy-button",
       "availability-notify",
       "availability-subscriber",
       "share#default"
     ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#pdp": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-text#pdp"]
+  },
+  "product-highlight-text#pdp": {
+    "props": {
+      "message": "{highlightName}"
+    }
   },
 
   "flex-layout.row#product-name": {

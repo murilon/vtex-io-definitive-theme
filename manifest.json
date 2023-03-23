@@ -1,7 +1,7 @@
 {
   "vendor": "murilofaria",
   "name": "vtex-io-definitive-theme",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -75,7 +75,6 @@
     "murilofaria.fullstack-component-example": "0.x"
   },
   "peerDependencies": {
-    "vtex.reviews-and-ratings": "2.x",
     "vtex.availability-notify": "1.x",
     "vtex.shopper-location": "1.x"
   },
