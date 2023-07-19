@@ -3,8 +3,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
@@ -16,8 +16,8 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
@@ -26,8 +26,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
@@ -46,8 +46,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default"
       }
     }
   },
