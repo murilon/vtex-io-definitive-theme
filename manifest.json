@@ -1,7 +1,7 @@
 {
   "vendor": "murilofaria",
   "name": "vtex-io-definitive-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -77,7 +77,8 @@
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",
-    "vtex.shopper-location": "1.x"
+    "vtex.shopper-location": "1.x",
+    "vtex.wish-list": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
