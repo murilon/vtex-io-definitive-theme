@@ -190,6 +190,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
+      "add-to-list-btn",
       "link-seller",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
