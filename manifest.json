@@ -73,7 +73,8 @@
     "vtex.my-account": "1.x",
     "vtex.category-menu": "2.x",
     "vtex.seller-selector": "0.x",
-    "murilofaria.fullstack-component-example": "0.x"
+    "murilofaria.fullstack-component-example": "0.x",
+    "murilofaria.my-account-extension-example": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",
